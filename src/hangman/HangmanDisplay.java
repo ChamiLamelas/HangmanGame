@@ -274,7 +274,7 @@ public class HangmanDisplay extends JFrame implements ActionListener {
     private void buildUserProgressSection() {
         userProgressLbl = new JLabel(game.getUserProgress());
         userProgressLbl.setFont(new Font("book antiqua", Font.PLAIN, 44));
-        userProgressLbl.setForeground(Color.GREEN);
+        userProgressLbl.setForeground(new Color(0, 153, 0));
         userProgressLbl.setToolTipText("Your progress on guessing the word");
     }
 
@@ -283,7 +283,7 @@ public class HangmanDisplay extends JFrame implements ActionListener {
      */
     private void buildIncorrectAnswersSection() {
         incorrectAnswersLbl = new JLabel("");
-        incorrectAnswersLbl.setFont(new Font("book antiqua", Font.PLAIN, 16));
+        incorrectAnswersLbl.setFont(new Font("book antiqua", Font.PLAIN, 32));
         incorrectAnswersLbl.setForeground(Color.RED);
         incorrectAnswersLbl.setToolTipText("Your incorrect answers");
     }
